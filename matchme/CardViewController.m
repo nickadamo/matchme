@@ -98,6 +98,7 @@
     PFObject *gameScore = [PFObject objectWithClassName:@"Score"];
     NSNumber *y = [NSNumber numberWithInt:(self.scoreObject.score)];
     gameScore[@"score"] = y;
+    [gameScore setObject:[PFUser currentUser] forKey:@"createdBy"];
     
     [gameScore saveInBackground];
 }
@@ -156,7 +157,7 @@
     PFObject *gameScore = [PFObject objectWithClassName:@"Score"];
     NSNumber *y = [NSNumber numberWithInt:(self.scoreObject.score)];
     gameScore[@"score"] = y;
-    
+    [gameScore setObject:[PFUser currentUser] forKey:@"createdBy"];
     [gameScore saveInBackground];
 
     
@@ -216,6 +217,7 @@
     PFObject *gameScore = [PFObject objectWithClassName:@"Score"];
     NSNumber *y = [NSNumber numberWithInt:(self.scoreObject.score)];
     gameScore[@"score"] = y;
+    [gameScore setObject:[PFUser currentUser] forKey:@"createdBy"];
     
     [gameScore saveInBackground];
 
