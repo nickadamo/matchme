@@ -1,0 +1,18 @@
+//
+//  RootTableViewController.h
+//  matchme
+//
+//  Created by Nick Adamo on 7/21/14.
+//
+//
+
+#import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
+
+
+@interface RootTableViewController : UITableViewController
+
+- (IBAction)logoutButton:(id)sender;
+
+
+@end

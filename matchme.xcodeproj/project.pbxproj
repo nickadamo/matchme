@@ -15,13 +15,29 @@
 		692DAFCF197D60DC004AC666 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DAFCE197D60DC004AC666 /* AppDelegate.m */; };
 		692DAFD2197D60DC004AC666 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692DAFD0197D60DC004AC666 /* Main_iPhone.storyboard */; };
 		692DAFD5197D60DC004AC666 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692DAFD3197D60DC004AC666 /* Main_iPad.storyboard */; };
-		692DAFD8197D60DC004AC666 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DAFD7197D60DC004AC666 /* ViewController.m */; };
 		692DAFDA197D60DC004AC666 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692DAFD9197D60DC004AC666 /* Images.xcassets */; };
 		692DAFE1197D60DC004AC666 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DAFE0197D60DC004AC666 /* XCTest.framework */; };
 		692DAFE2197D60DC004AC666 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DAFBE197D60DC004AC666 /* Foundation.framework */; };
 		692DAFE3197D60DC004AC666 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DAFC2197D60DC004AC666 /* UIKit.framework */; };
 		692DAFEB197D60DC004AC666 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 692DAFE9197D60DC004AC666 /* InfoPlist.strings */; };
 		692DAFED197D60DC004AC666 /* matchmeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DAFEC197D60DC004AC666 /* matchmeTests.m */; };
+		692DAFF7197D6304004AC666 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DAFF6197D6304004AC666 /* Parse.framework */; };
+		692DAFF9197D635C004AC666 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DAFF8197D635C004AC666 /* AudioToolbox.framework */; };
+		692DAFFB197D6364004AC666 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DAFFA197D6364004AC666 /* CFNetwork.framework */; };
+		692DAFFD197D6375004AC666 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DAFFC197D6375004AC666 /* CoreLocation.framework */; };
+		692DAFFF197D6380004AC666 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DAFFE197D6380004AC666 /* libz.dylib */; };
+		692DB001197D6389004AC666 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DB000197D6389004AC666 /* MobileCoreServices.framework */; };
+		692DB003197D6390004AC666 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DB002197D6390004AC666 /* QuartzCore.framework */; };
+		692DB005197D6397004AC666 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DB004197D6397004AC666 /* Security.framework */; };
+		692DB007197D639F004AC666 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DB006197D639F004AC666 /* StoreKit.framework */; };
+		692DB009197D63A8004AC666 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 692DB008197D63A8004AC666 /* SystemConfiguration.framework */; };
+		692DB00C197D656C004AC666 /* GameCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DB00B197D656C004AC666 /* GameCategory.m */; };
+		692DB011197D6FA4004AC666 /* RootTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DB010197D6FA4004AC666 /* RootTableViewController.m */; };
+		692DB014197D7412004AC666 /* SecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DB013197D7412004AC666 /* SecondTableViewController.m */; };
+		692DB017197D7956004AC666 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DB016197D7956004AC666 /* Card.m */; };
+		692DB01A197D7D60004AC666 /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DB019197D7D60004AC666 /* CardViewController.m */; };
+		692DB01D197D813D004AC666 /* Score.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DB01C197D813D004AC666 /* Score.m */; };
+		692DB020197DE45E004AC666 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 692DB01F197DE45E004AC666 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +63,36 @@
 		692DAFCE197D60DC004AC666 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		692DAFD1197D60DC004AC666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		692DAFD4197D60DC004AC666 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		692DAFD6197D60DC004AC666 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		692DAFD7197D60DC004AC666 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		692DAFD9197D60DC004AC666 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		692DAFDF197D60DC004AC666 /* matchmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = matchmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		692DAFE0197D60DC004AC666 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		692DAFE8197D60DC004AC666 /* matchmeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "matchmeTests-Info.plist"; sourceTree = "<group>"; };
 		692DAFEA197D60DC004AC666 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		692DAFEC197D60DC004AC666 /* matchmeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = matchmeTests.m; sourceTree = "<group>"; };
+		692DAFF6197D6304004AC666 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		692DAFF8197D635C004AC666 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		692DAFFA197D6364004AC666 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		692DAFFC197D6375004AC666 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		692DAFFE197D6380004AC666 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		692DB000197D6389004AC666 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		692DB002197D6390004AC666 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		692DB004197D6397004AC666 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		692DB006197D639F004AC666 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		692DB008197D63A8004AC666 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		692DB00A197D656C004AC666 /* GameCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCategory.h; sourceTree = "<group>"; };
+		692DB00B197D656C004AC666 /* GameCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCategory.m; sourceTree = "<group>"; };
+		692DB00F197D6FA4004AC666 /* RootTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootTableViewController.h; sourceTree = "<group>"; };
+		692DB010197D6FA4004AC666 /* RootTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootTableViewController.m; sourceTree = "<group>"; };
+		692DB012197D7412004AC666 /* SecondTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTableViewController.h; sourceTree = "<group>"; };
+		692DB013197D7412004AC666 /* SecondTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewController.m; sourceTree = "<group>"; };
+		692DB015197D7956004AC666 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		692DB016197D7956004AC666 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		692DB018197D7D60004AC666 /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		692DB019197D7D60004AC666 /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		692DB01B197D813D004AC666 /* Score.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Score.h; sourceTree = "<group>"; };
+		692DB01C197D813D004AC666 /* Score.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Score.m; sourceTree = "<group>"; };
+		692DB01E197DE45E004AC666 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		692DB01F197DE45E004AC666 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +100,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				692DB009197D63A8004AC666 /* SystemConfiguration.framework in Frameworks */,
+				692DB007197D639F004AC666 /* StoreKit.framework in Frameworks */,
+				692DB005197D6397004AC666 /* Security.framework in Frameworks */,
+				692DB003197D6390004AC666 /* QuartzCore.framework in Frameworks */,
+				692DB001197D6389004AC666 /* MobileCoreServices.framework in Frameworks */,
+				692DAFFF197D6380004AC666 /* libz.dylib in Frameworks */,
+				692DAFFD197D6375004AC666 /* CoreLocation.framework in Frameworks */,
 				692DAFC1197D60DC004AC666 /* CoreGraphics.framework in Frameworks */,
+				692DAFFB197D6364004AC666 /* CFNetwork.framework in Frameworks */,
+				692DAFF9197D635C004AC666 /* AudioToolbox.framework in Frameworks */,
 				692DAFC3197D60DC004AC666 /* UIKit.framework in Frameworks */,
+				692DAFF7197D6304004AC666 /* Parse.framework in Frameworks */,
 				692DAFBF197D60DC004AC666 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,10 +132,13 @@
 		692DAFB2197D60DC004AC666 = {
 			isa = PBXGroup;
 			children = (
+				692DAFD0197D60DC004AC666 /* Main_iPhone.storyboard */,
 				692DAFC4197D60DC004AC666 /* matchme */,
 				692DAFE6197D60DC004AC666 /* matchmeTests */,
 				692DAFBD197D60DC004AC666 /* Frameworks */,
 				692DAFBC197D60DC004AC666 /* Products */,
+				692DB00E197D6F23004AC666 /* iPad */,
+				692DAFF6197D6304004AC666 /* Parse.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +154,15 @@
 		692DAFBD197D60DC004AC666 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				692DB008197D63A8004AC666 /* SystemConfiguration.framework */,
+				692DB006197D639F004AC666 /* StoreKit.framework */,
+				692DB004197D6397004AC666 /* Security.framework */,
+				692DB002197D6390004AC666 /* QuartzCore.framework */,
+				692DB000197D6389004AC666 /* MobileCoreServices.framework */,
+				692DAFFE197D6380004AC666 /* libz.dylib */,
+				692DAFFC197D6375004AC666 /* CoreLocation.framework */,
+				692DAFFA197D6364004AC666 /* CFNetwork.framework */,
+				692DAFF8197D635C004AC666 /* AudioToolbox.framework */,
 				692DAFBE197D60DC004AC666 /* Foundation.framework */,
 				692DAFC0197D60DC004AC666 /* CoreGraphics.framework */,
 				692DAFC2197D60DC004AC666 /* UIKit.framework */,
@@ -114,12 +174,15 @@
 		692DAFC4197D60DC004AC666 /* matchme */ = {
 			isa = PBXGroup;
 			children = (
-				692DAFCD197D60DC004AC666 /* AppDelegate.h */,
-				692DAFCE197D60DC004AC666 /* AppDelegate.m */,
-				692DAFD0197D60DC004AC666 /* Main_iPhone.storyboard */,
-				692DAFD3197D60DC004AC666 /* Main_iPad.storyboard */,
-				692DAFD6197D60DC004AC666 /* ViewController.h */,
-				692DAFD7197D60DC004AC666 /* ViewController.m */,
+				692DB01E197DE45E004AC666 /* LoginViewController.h */,
+				692DB01F197DE45E004AC666 /* LoginViewController.m */,
+				692DB00F197D6FA4004AC666 /* RootTableViewController.h */,
+				692DB010197D6FA4004AC666 /* RootTableViewController.m */,
+				692DB012197D7412004AC666 /* SecondTableViewController.h */,
+				692DB013197D7412004AC666 /* SecondTableViewController.m */,
+				692DB018197D7D60004AC666 /* CardViewController.h */,
+				692DB019197D7D60004AC666 /* CardViewController.m */,
+				692DB00D197D6EF2004AC666 /* Objects */,
 				692DAFD9197D60DC004AC666 /* Images.xcassets */,
 				692DAFC5197D60DC004AC666 /* Supporting Files */,
 			);
@@ -129,6 +192,8 @@
 		692DAFC5197D60DC004AC666 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				692DAFCD197D60DC004AC666 /* AppDelegate.h */,
+				692DAFCE197D60DC004AC666 /* AppDelegate.m */,
 				692DAFC6197D60DC004AC666 /* matchme-Info.plist */,
 				692DAFC7197D60DC004AC666 /* InfoPlist.strings */,
 				692DAFCA197D60DC004AC666 /* main.m */,
@@ -153,6 +218,28 @@
 				692DAFE9197D60DC004AC666 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		692DB00D197D6EF2004AC666 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				692DB00A197D656C004AC666 /* GameCategory.h */,
+				692DB00B197D656C004AC666 /* GameCategory.m */,
+				692DB015197D7956004AC666 /* Card.h */,
+				692DB016197D7956004AC666 /* Card.m */,
+				692DB01B197D813D004AC666 /* Score.h */,
+				692DB01C197D813D004AC666 /* Score.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		692DB00E197D6F23004AC666 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				692DAFD3197D60DC004AC666 /* Main_iPad.storyboard */,
+			);
+			name = iPad;
+			path = matchme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +288,9 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				TargetAttributes = {
+					692DAFBA197D60DC004AC666 = {
+						DevelopmentTeam = 24QM7RK8FD;
+					};
 					692DAFDE197D60DC004AC666 = {
 						TestTargetID = 692DAFBA197D60DC004AC666;
 					};
@@ -252,9 +342,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				692DAFD8197D60DC004AC666 /* ViewController.m in Sources */,
+				692DB00C197D656C004AC666 /* GameCategory.m in Sources */,
 				692DAFCF197D60DC004AC666 /* AppDelegate.m in Sources */,
+				692DB01A197D7D60004AC666 /* CardViewController.m in Sources */,
 				692DAFCB197D60DC004AC666 /* main.m in Sources */,
+				692DB011197D6FA4004AC666 /* RootTableViewController.m in Sources */,
+				692DB020197DE45E004AC666 /* LoginViewController.m in Sources */,
+				692DB014197D7412004AC666 /* SecondTableViewController.m in Sources */,
+				692DB01D197D813D004AC666 /* Score.m in Sources */,
+				692DB017197D7956004AC666 /* Card.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +387,7 @@
 				692DAFD1197D60DC004AC666 /* Base */,
 			);
 			name = Main_iPhone.storyboard;
+			path = matchme;
 			sourceTree = "<group>";
 		};
 		692DAFD3197D60DC004AC666 /* Main_iPad.storyboard */ = {
@@ -389,6 +486,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "matchme/matchme-Prefix.pch";
 				INFOPLIST_FILE = "matchme/matchme-Info.plist";
@@ -402,6 +504,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "matchme/matchme-Prefix.pch";
 				INFOPLIST_FILE = "matchme/matchme-Info.plist";
