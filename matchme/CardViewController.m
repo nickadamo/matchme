@@ -94,10 +94,14 @@
         _button3.enabled = NO;
     }
     
-    //Update parse with score
+    //Update parse with attributed score
     PFObject *gameScore = [PFObject objectWithClassName:@"Score"];
-    NSNumber *y = [NSNumber numberWithInt:(self.scoreObject.score)];
-    gameScore[@"score"] = y;
+    NSNumber *x = [NSNumber numberWithInt:(self.scoreObject.score)];
+    gameScore[@"score"] = x;
+    NSNumber *z = [NSNumber numberWithInt:(self.card.categoryID)];
+    gameScore[@"categoryID"] = z;
+    NSNumber *w = [NSNumber numberWithInt:(self.card.cardID)];
+    gameScore[@"cardID"] = w;
     [gameScore setObject:[PFUser currentUser] forKey:@"createdBy"];
     
     [gameScore saveInBackground];
@@ -153,14 +157,18 @@
         _button3.enabled = NO;
     }
     
-    //Update parse with score
+    //Update parse with attributed score
     PFObject *gameScore = [PFObject objectWithClassName:@"Score"];
     NSNumber *y = [NSNumber numberWithInt:(self.scoreObject.score)];
     gameScore[@"score"] = y;
+    NSNumber *n = [NSNumber numberWithInt:(self.card.categoryID)];
+    gameScore[@"categoryID"] = n;
+    NSNumber *z = [NSNumber numberWithInt:(self.card.cardID)];
+    gameScore[@"cardID"] = z;
     [gameScore setObject:[PFUser currentUser] forKey:@"createdBy"];
+    
     [gameScore saveInBackground];
 
-    
 }
 
 //User selectes the 3rd image
@@ -213,10 +221,14 @@
         _button3.enabled = NO;
     }
     
-    //Update parse with score
+    //Update parse with attributed score
     PFObject *gameScore = [PFObject objectWithClassName:@"Score"];
     NSNumber *y = [NSNumber numberWithInt:(self.scoreObject.score)];
     gameScore[@"score"] = y;
+    NSNumber *n = [NSNumber numberWithInt:(self.card.categoryID)];
+    gameScore[@"categoryID"] = n;
+    NSNumber *z = [NSNumber numberWithInt:(self.card.cardID)];
+    gameScore[@"cardID"] = z;
     [gameScore setObject:[PFUser currentUser] forKey:@"createdBy"];
     
     [gameScore saveInBackground];

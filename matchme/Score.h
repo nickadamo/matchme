@@ -16,4 +16,5 @@
 @property NSString *cardName;
 @property int categoryID;
 
+
 @end
