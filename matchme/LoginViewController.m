@@ -132,6 +132,8 @@
     }];
 }
 
+
+//Play as a guest "quick play"
 - (IBAction)quickPlayButton:(id)sender {
     
     [PFAnonymousUtils logInWithBlock:^(PFUser *user, NSError *error) {
@@ -145,6 +147,7 @@
     }];
 }
 
+//Get rid of keyboard if user taps the background
 - (IBAction)backgroundTap:(id)sender {
     [self.view endEditing:YES];
 }
