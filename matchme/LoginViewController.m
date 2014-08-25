@@ -29,9 +29,10 @@
     // Do any additional setup after loading the view.
 }
 
-//Check if User is already registered
+
 - (void) viewDidAppear: (BOOL) animated {
- 
+    
+    //Check if User is already registered
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
         [self  performSegueWithIdentifier:@"login" sender: self];
@@ -45,7 +46,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+//Pre-Condition: User is not logged in
+//Post-Condition:User is logged in
 - (IBAction)loginButton:(id)sender {
     [PFUser logInWithUsernameInBackground:_loginUsernameField.text password:_loginPasswordField.text block:^(PFUser *user, NSError *error) {
         if (!error) {
@@ -66,17 +68,23 @@
 }
 
 
-
+//Pre-Condition: User login screen is visible
+//Post-Condition: Registration screen is now visible
 - (IBAction)registerSegueButton:(id)sender {
     [UIView animateWithDuration:0.3 animations:^{
         _registerOverlayView.frame = self.view.frame;
     }];
 }
 
+//Pre-Condition: Registration screen is visble
+//Post-Condition: User selected cancel and Login Screen is now visible
 - (IBAction)hideRegisterOverlayView:(id)sender {
     [_registerOverlayView setHidden:YES];
 }
 
+
+//Pre-Condition: User is not registered
+//Post-Condition: User is registed on Parse.come and is logged in
 - (IBAction)signUpAction:(id)sender {
     //Get rid of keyboard
     [_usernameField resignFirstResponder];
@@ -86,7 +94,7 @@
     [self checkFieldsComplete];
 }
 
-
+//Make sure all of the fields are not empty
 - (void) checkFieldsComplete {
     if ([_usernameField.text isEqualToString:@""] || [_emailField.text isEqualToString:@""] || [_passwordField.text isEqualToString:@""] || [_reEnterPasswordField.text isEqualToString:@""]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!" message:@"Please complete all fields" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -97,6 +105,7 @@
     }
 }
 
+//Make sure the password entered matches the password reentered
 - (void) checkPasswordsMatch {
     if (![_passwordField.text isEqualToString:_reEnterPasswordField.text]) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Whoops!" message:@"Please make sure the both passwords match" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
@@ -107,6 +116,7 @@
     }
 }
 
+//Creates a new user on Parse.com
 - (void) registerNewUser {
     NSLog(@"registering....");
     PFUser *newUser = [PFUser user];
@@ -151,4 +161,5 @@
 - (IBAction)backgroundTap:(id)sender {
     [self.view endEditing:YES];
 }
+
 @end

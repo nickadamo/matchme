@@ -11,9 +11,11 @@
 @interface Score : NSObject
 
 @property int score;
+
 @property int wrongAttempt;
-@property NSString *username;
+
 @property NSString *cardName;
+
 @property int categoryID;
 
 

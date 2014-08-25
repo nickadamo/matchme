@@ -11,6 +11,7 @@
 @interface GameCategory : NSObject
 
 @property int categoryID;
+
 @property NSString *categoryName;
 
 @end

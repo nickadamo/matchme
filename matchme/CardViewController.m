@@ -94,7 +94,7 @@
         _button3.enabled = NO;
     }
     
-    //Update parse with attributed score
+    //Update parse with attributed scoreobject
     PFObject *gameScore = [PFObject objectWithClassName:@"Score"];
     NSNumber *x = [NSNumber numberWithInt:(self.scoreObject.score)];
     gameScore[@"score"] = x;

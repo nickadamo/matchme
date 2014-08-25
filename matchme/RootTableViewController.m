@@ -19,14 +19,14 @@
 
 @implementation RootTableViewController
 
-//Create an array of categories to chose from
+//Add categories from parse.com to the "categories" mutable array
 - (void) loadCategories  {
     PFQuery *query = [PFQuery queryWithClassName:@"Category"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
             // The find succeeded.
             NSLog(@"Successfully retrieved %lu categories.", (unsigned long)objects.count);
-            // Do something with the found objects
+            // Display found objects
             int count=0;
             for (PFObject *object in objects) {
                 count++;

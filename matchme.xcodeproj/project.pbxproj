@@ -576,6 +576,7 @@
 				692DAFF2197D60DC004AC666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		692DAFF3197D60DC004AC666 /* Build configuration list for PBXNativeTarget "matchmeTests" */ = {
 			isa = XCConfigurationList;
@@ -584,6 +585,7 @@
 				692DAFF5197D60DC004AC666 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

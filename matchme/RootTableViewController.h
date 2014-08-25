@@ -12,6 +12,8 @@
 
 @interface RootTableViewController : UITableViewController
 
+
+//Brings user back to login/registration screen
 - (IBAction)logoutButton:(id)sender;
 
 
