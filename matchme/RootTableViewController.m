@@ -98,7 +98,7 @@
     static NSString *CellIdentifier = @"categoryCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
+    // Configure the cell... The user selection sets the "categoryTitle" pointer which points to "categoryName" property which is encapsulated in the GameCategory class
     GameCategory *categoryTitle = [self.categories objectAtIndex:indexPath.row];
     cell.textLabel.text = categoryTitle.categoryName;
     return cell;
@@ -158,18 +158,20 @@
     if ([segue.identifier isEqualToString:@"showCategoryDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        
-        SecondTableViewController *secondViewController = segue.destinationViewController;//created second tableView conroller object secondViewController
+        //created second tableView conroller object secondViewController
+        SecondTableViewController *secondViewController = segue.destinationViewController;
         
         // Pass the selected object to the new view controller.
         secondViewController.category = [self.categories objectAtIndex:indexPath.row];
-        
-        secondViewController.title = secondViewController.category.categoryName;//title of second view controller is whatever category is selected
-        
+       
+        //the title of second view controller is whatever category is selected
+        secondViewController.title = secondViewController.category.categoryName;
     }
     
 }
 
+
+//Returns user back to login/registration screen
 - (IBAction)logoutButton:(id)sender {
     [PFUser logOut];
     [self dismissViewControllerAnimated:YES completion:nil];

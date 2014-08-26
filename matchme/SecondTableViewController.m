@@ -72,7 +72,8 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    //call loadCards1 method
+    
+    //call loadCards method
     [self loadCards];
     
     //instantiate array of the selected cards
@@ -103,7 +104,7 @@
     static NSString *CellIdentifier = @"cardCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    // Configure the cell... the User selection sets the “*card” pointer which points the the cardName property encapsulated in the Card class
     Card *card = [self.displayResult objectAtIndex:indexPath.row];
     cell.textLabel.text = card.cardName;
     return cell;
